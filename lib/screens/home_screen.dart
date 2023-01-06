@@ -9,11 +9,27 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  animate() {}
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
-        child: Center(child: RiveAnimation.asset("assets/star_rating.riv")),
+    return Scaffold(
+      body: Center(
+        child: SafeArea(
+          child: SizedBox(
+            height: 600,
+            width: MediaQuery.of(context).size.width * 0.8,
+            child: Column(
+              children: [
+                const Expanded(
+                  flex: 8,
+                  child: RiveAnimation.asset("assets/star_rating.riv"),
+                ),
+                const SizedBox(height: 20),
+                TextButton(onPressed: animate, child: const Text("Animate"))
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
