@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -12,9 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: Center(
-          child: Text('Home Screen'),
-        ),
+        child: Center(child: RiveAnimation.asset("assets/star_rating.riv")),
       ),
     );
   }
