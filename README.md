@@ -5,8 +5,8 @@ rive star animation.
 
 The rive file used in this project is from [Rive](https://rive.app/community/3472-7900-rating-animation/) community by [JcToon](https://rive.app/@JcToon/)
 
-## A flutter project made using
-- **Rive** for animation [[pub.dev]](https://pub.dev/packages/rive) [[doc]](https://rive.app/)
+## Packages used
+- **Rive** for animation [pub.dev](https://pub.dev/packages/rive)
 
 ## To run the project:
 ```
