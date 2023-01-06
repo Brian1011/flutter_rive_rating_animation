@@ -10,16 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late RiveAnimationController _btnAnimationController;
-
-  animate() {}
-
-  initState() {
-    _btnAnimationController = OneShotAnimation(
-      "1_star",
-      autoplay: true,
-    );
-    super.initState();
-  }
+  String riveAssetName = "assets/star_rating.riv";
 
   /*
     states that exist in the rive file
@@ -29,6 +20,17 @@ class _HomeScreenState extends State<HomeScreen> {
     4_stars
     5_stars
   */
+
+  animate() {}
+
+  @override
+  initState() {
+    _btnAnimationController = OneShotAnimation(
+      "1_star",
+      autoplay: true,
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Expanded(
                   flex: 8,
-                  child: RiveAnimation.asset("assets/star_rating.riv",
+                  child: RiveAnimation.asset(riveAssetName,
                       controllers: [_btnAnimationController]),
                 ),
                 const SizedBox(height: 20),
