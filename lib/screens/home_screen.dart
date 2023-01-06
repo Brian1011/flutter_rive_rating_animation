@@ -11,22 +11,43 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   late RiveAnimationController _btnAnimationController;
   String riveAssetName = "assets/star_rating.riv";
+  int stateCount = 0;
+  String currentState = "1_star";
 
-  /*
-    states that exist in the rive file
-    1_star
-    2_stars
-    3_stars
-    4_stars
-    5_stars
-  */
+  Map<int, String> allStates = {
+    0: "1_star",
+    1: "2_stars",
+    2: "3_stars",
+    3: "4_stars",
+    4: "5_stars",
+  };
 
-  animate() {}
+  animate() {
+    changeStateCount();
+  }
+
+  changeStateCount() {
+    setState(() {
+      if (stateCount < 4) {
+        stateCount++;
+      } else {
+        stateCount = 0;
+      }
+      currentState = allStates[stateCount]!;
+      updateAnimationController();
+    });
+  }
+
+  updateAnimationController() {
+    _btnAnimationController = OneShotAnimation(
+      currentState,
+    );
+  }
 
   @override
   initState() {
     _btnAnimationController = OneShotAnimation(
-      "1_star",
+      currentState,
       autoplay: true,
     );
     super.initState();
