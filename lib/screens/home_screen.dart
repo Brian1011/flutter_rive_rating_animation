@@ -9,11 +9,19 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  // create a RiveAnimationController to control the animation
   late RiveAnimationController _btnAnimationController;
+
+  // name of the rive asset
   String riveAssetName = "assets/star_rating.riv";
+
+  // default state count
   int stateCount = 0;
+
+  // default state name
   String currentState = "1_star";
 
+  // all states that exist in the rive file
   Map<int, String> allStates = {
     0: "1_star",
     1: "2_stars",
@@ -26,6 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
     changeStateCount();
   }
 
+  /* change the state count.
+   If the state count is greater than the total number of states, reset it to 0
+   */
   changeStateCount() {
     setState(() {
       if (stateCount < 4) {
@@ -38,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  // update the animation controller with the new state
   updateAnimationController() {
     _btnAnimationController = OneShotAnimation(
       currentState,
