@@ -1,7 +1,7 @@
 # Flutter Rive Star Animation
 
 This is a flutter project whose aim is to illustrate flutter with 
-rive star animation. 
+[rive](https://rive.app/) star animation. 
 
 The rive file used in this project is from [Rive](https://rive.app/community/3472-7900-rating-animation/) community by [JcToon](https://rive.app/@JcToon/)
 
