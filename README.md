@@ -1,16 +1,18 @@
-# flutter_rive_sample
+# Flutter Rive Star Animation
 
-A new Flutter project.
+This is a flutter project whose aim is to illustrate flutter with 
+rive star animation. 
 
-## Getting Started
+The rive file used in this project is from [Rive](https://rive.app/community/3472-7900-rating-animation/)
 
-This project is a starting point for a Flutter application.
+## A flutter project made using
+- **Rive** for animation [[pub.dev]](https://pub.dev/packages/rive) [[doc]](https://rive.app/)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## To run the project:
+```
+flutter pub get
+flutter run
+```
+## Versions used
+- Flutter: 3.3.10
+- Dart: 2.18.6
