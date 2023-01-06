@@ -81,7 +81,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       controllers: [_btnAnimationController]),
                 ),
                 const SizedBox(height: 20),
-                TextButton(onPressed: animate, child: const Text("Animate"))
+                ElevatedButton(
+                    onPressed: animate, child: const Text("Animate")),
               ],
             ),
           ),
