@@ -34,8 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
     changeStateCount();
   }
 
-  /* change the state count.
-   If the state count is greater than the total number of states, reset it to 0
+  /*
+    change the state count.
+    If the state count is greater than the total number of states, reset it to 0
    */
   changeStateCount() {
     setState(() {
