@@ -19,3 +19,7 @@ flutter run
 ## Versions used
 - Flutter: 3.3.10
 - Dart: 2.18.6
+
+
+## Demo
+![Recorded demo](https://github.com/Brian1011/flutter_rive_rating_animation/blob/main/assets/stars_animation.gif)
