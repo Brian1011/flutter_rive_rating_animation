@@ -8,7 +8,7 @@
 This is a flutter project whose aim is to illustrate flutter with 
 [rive](https://rive.app/) star animation. 
 
-Inspired by this [article](https://medium.com/flutter-community/rive-and-flutter-a-match-made-in-animation-heaven-episode-1-3d8a6535bda9)
+Inspired by this [rive article tutorial](https://medium.com/flutter-community/rive-and-flutter-a-match-made-in-animation-heaven-episode-1-3d8a6535bda9).
 
 The rive file used in this project is from [Rive](https://rive.app/community/3472-7900-rating-animation/) community by [JcToon](https://rive.app/@JcToon/)
 
