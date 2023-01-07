@@ -3,6 +3,8 @@
 ## Demo
 ![Recorded demo](https://github.com/Brian1011/flutter_rive_rating_animation/blob/main/assets/stars_animation.gif)
 
+## About
+
 This is a flutter project whose aim is to illustrate flutter with 
 [rive](https://rive.app/) star animation. 
 
